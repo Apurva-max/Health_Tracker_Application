@@ -231,59 +231,6 @@ const Register = () => {
   </div>
 );
 
-// return (
-//     <div className="auth-container">
-//       <div className="auth-card">
-//         <h1>📝 Register</h1>
-
-//         <form onSubmit={handleSubmit}>
-//           <div className="input-group">
-//             <label>Name</label>
-//             <input
-//               type="text"
-//               placeholder="Enter Name"
-//               value={name}
-//               onChange={(e) => setName(e.target.value)}
-//               required
-//             />
-//           </div>
-
-//           <div className="input-group">
-//             <label>Email</label>
-//             <input
-//               type="email"
-//               placeholder="Enter Email"
-//               value={email}
-//               onChange={(e) => setEmail(e.target.value)}
-//               required
-//             />
-//           </div>
-
-//           <div className="input-group">
-//             <label>Password</label>
-//             <input
-//               type="password"
-//               placeholder="Enter Password"
-//               value={password}
-//               onChange={(e) => setPassword(e.target.value)}
-//               required
-//             />
-//           </div>
-
-//           <button type="submit" className="save-btn">
-//             Register
-//           </button>
-//         </form>
-
-//         {message && <p className="message-box">{message}</p>}
-
-//         <p>
-//           Already have an account? <Link to="/login">Login</Link>
-//         </p>
-//       </div>
-//     </div>
-//   );.. same register page kae saath bhi karo 
-
 };
 
 export default Register;

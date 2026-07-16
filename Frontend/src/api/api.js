@@ -45,7 +45,7 @@ export const healthApi = {
 
     today: () => api.get("/health/today"),
 
-    update: (id) => api.put(`/health/${id}`, data),
+    update: (id, data) => api.put(`/health/${id}`, data),
 
     delete: (id) => api.delete(`/health/${id}`),
 
