@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import path from 'path';
-import { fileURLToPath } from 'url';
+// import path from 'path';
+// import { fileURLToPath } from 'url';
 
 import connectDB from './src/config/db.js';
 import authRoutes from './src/routes/authRoutes.js';
@@ -14,8 +14,8 @@ connectDB();
 
 const app = express();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 // Middlewares
 app.use(cors());
@@ -27,23 +27,23 @@ app.use("/api/user", userRoutes);
 app.use("/api/health", healthRoutes);
 
 // Production
-if (process.env.NODE_ENV === "production") {
+// if (process.env.NODE_ENV === "production") {
 
-    app.use(
-        express.static(
-            path.join(__dirname, "../Frontend/dist")
-        )
-    );
+//     app.use(
+//         express.static(
+//             path.join(__dirname, "../Frontend/dist")
+//         )
+//     );
 
-    app.get("*", (req, res) => {
-        res.sendFile(
-            path.join(
-                __dirname,
-                "../Frontend/dist/index.html"
-            )
-        );
-    });
-}
+//     app.get("*", (req, res) => {
+//         res.sendFile(
+//             path.join(
+//                 __dirname,
+//                 "../Frontend/dist/index.html"
+//             )
+//         );
+//     });
+// }
 
 // Test Route
 app.get("/", (req, res) => {
