@@ -1,4 +1,4 @@
-import { NavLink, useNavigate, Outlet } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = ({ theme, setTheme }) => {
   const navigate = useNavigate();
@@ -196,7 +196,7 @@ const Navbar = ({ theme, setTheme }) => {
         </div>
       </nav>
 
-      <Outlet />
+      {/* <Outlet /> */}
     </>
   );
 };

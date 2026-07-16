@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
 import Dashboard from './pages/Dashboard'
@@ -14,6 +14,7 @@ function Layout({ theme, setTheme }) {
   return (
     <>
       <Navbar theme={theme} setTheme={setTheme} />
+      <Outlet />
     </>
   )
 }
