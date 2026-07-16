@@ -6,8 +6,8 @@ A full-stack Health Tracker web application that helps users monitor their daily
 
 ## 🚀 Live Demo
 
-Frontend: Coming Soon  
-Backend: Coming Soon
+Frontend: https://health-tracker-application-ou5xsnzwv-apurva-maxs-projects.vercel.app/
+Backend: https://healthtrackerapplication-production.up.railway.app/
 
 ---
 
